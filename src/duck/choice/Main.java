@@ -26,7 +26,7 @@ public class Main {
         System.out.println("the price of " + item1.description + "is " + item1.price + "and the size is " + item1.size);
         System.out.println("the price of " + item2.description + "is " + item2.price + "and the size is " + item2.size);
 
-        total = (item2.price + item1.price*2) * tax;
+        total = (item1.price + item2.price*2) * (1+tax);
 
         System.out.println(total);
     }
