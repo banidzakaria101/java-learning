@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         double tax = 0.2;
         double total;
+        int measurement = 6;
 
         Customer c1 = new Customer();
         c1.name ="pink";
@@ -29,5 +30,27 @@ public class Main {
         total = (item1.price + item2.price*2) * (1+tax);
 
         System.out.println(total);
+
+        //practice switch statement:
+        Customer c2 = new Customer();
+        c2.name ="pinky";
+        c2.size = "S";
+
+        switch (measurement) {
+            case 1,2,3:
+                c2.size = "S";
+                break;
+            case 4,5,6:
+                c2.size = "M";
+                break;
+            case 7,8,9:
+                c2.size = "L";
+                break;
+            default:
+                c2.size ="x";
+        }
+
+        System.out.println("the size of the customer " + c2.name + "is " + c2.size);
+
     }
 }
