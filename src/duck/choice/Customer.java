@@ -35,7 +35,6 @@ public class Customer {
             default:
                 setSize("x");
         }
-        this.size = size;
     }
 
 }

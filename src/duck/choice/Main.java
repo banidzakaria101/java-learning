@@ -73,15 +73,16 @@ public class Main {
 //        //practicing loops
 //        //using if statement to control flow
         for (Clothing item : items) {
-            System.out.println("the price of " + item.getDescription() + "is " + item.getPrice() + " and the size is " + item.getSize());
+            System.out.println("the size of " + item.getDescription() + " is " + item.getSize());
             if(c2.getSize().equals(item.getSize())) {
-                total = item.getPrice();
+                total = total + item.getPrice();
                 if ( total>15){
                     break;
                 }
             }
         }
         System.out.println(total);
+
 
     }
 }

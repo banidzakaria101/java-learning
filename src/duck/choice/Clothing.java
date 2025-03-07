@@ -5,7 +5,7 @@ public class Clothing {
     private String description;
     private double price;
     private String size;
-    private final int minimumPrice = 10;
+    private final double minimumPrice = 10.0;
     private final double tax = 0.2;
 
 
@@ -16,7 +16,8 @@ public class Clothing {
     public void setPrice(double price) {
         if (price < minimumPrice) {
             this.price = price;
-        } else this.price = minimumPrice;
+        } else
+            this.price = minimumPrice;
 
     }
 
