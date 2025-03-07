@@ -6,9 +6,9 @@ import java.lang.reflect.Array;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-//        double tax = 0.2;
-//        double total = 0.0;
-//        int measurement = 6;
+        double tax = 0.2;
+        double total = 0.0;
+        int measurement = 6;
 
         Clothing item1 = new Clothing();
         Clothing item2 = new Clothing();
@@ -41,7 +41,7 @@ public class Main {
 
 
         //practice switch statement:
-//        Clothing[] items = {item1, item2, item3, item4};
+        Clothing[] items = {item1, item2, item3, item4};
 
 //        System.out.println("the price of " + item1.description + "is " + item1.price + "and the size is " + item1.size);
 //        System.out.println("the price of " + item2.description + "is " + item2.price + "and the size is " + item2.size);
@@ -72,16 +72,16 @@ public class Main {
 //
 //        //practicing loops
 //        //using if statement to control flow
-//        for (Clothing item : items) {
-//            System.out.println("the price of " + item.description + "is " + item.price + " and the size is " + item.size);
-//            if(c2.size.equals(item.size)) {
-//                total = total + item.price;
-//                if ( total>15){
-//                    break;
-//                }
-//            }
-//        }
-//        System.out.println(total);
+        for (Clothing item : items) {
+            System.out.println("the price of " + item.getDescription() + "is " + item.getPrice() + " and the size is " + item.getSize());
+            if(c2.getSize().equals(item.getSize())) {
+                total = item.getPrice();
+                if ( total>15){
+                    break;
+                }
+            }
+        }
+        System.out.println(total);
 
     }
 }
