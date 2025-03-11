@@ -38,7 +38,8 @@ public class Customer {
         }
     }
 
-    public void addItems(Clothing[] items) {}
+    public void addItems(Clothing[] items) {
+    }
 
     public Clothing[] getItems() {
         return items;

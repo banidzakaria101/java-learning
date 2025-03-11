@@ -1,6 +1,5 @@
 package duck.choice;
 
-import java.lang.reflect.Array;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -42,6 +41,11 @@ public class Main {
 
         //practice switch statement:
         Clothing[] items = {item1, item2, item3, item4};
+        c1.addItems(items);
+        for (Clothing item : items) {
+            System.out.println(item);
+        }
+        System.out.println(total);
 
 //        System.out.println("the price of " + item1.description + "is " + item1.price + "and the size is " + item1.size);
 //        System.out.println("the price of " + item2.description + "is " + item2.price + "and the size is " + item2.size);
@@ -72,16 +76,16 @@ public class Main {
 //
 //        //practicing loops
 //        //using if statement to control flow
-        for (Clothing item : items) {
-            System.out.println("the size of " + item.getDescription() + " is " + item.getSize());
-            if(c2.getSize().equals(item.getSize())) {
-                total = total + item.getPrice();
-                if ( total>15){
-                    break;
-                }
-            }
-        }
-        System.out.println(total);
+//        for (Clothing item : items) {
+//            System.out.println("the size of " + item.getDescription() + " is " + item.getSize());
+//            if(c2.getSize().equals(item.getSize())) {
+//                total = total + item.getPrice();
+//                if ( total>15){
+//                    break;
+//                }
+//            }
+//        }
+//        System.out.println(total);
 
 
     }
