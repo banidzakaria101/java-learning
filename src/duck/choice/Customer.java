@@ -45,6 +45,11 @@ public class Customer {
     }
 
     public double getClothingCost() {
+        double total = 0;
+        for (Clothing item : items) {
+            total = total + item.getPrice();
+        }
+        return total;
     }
 
 }
