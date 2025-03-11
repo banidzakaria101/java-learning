@@ -4,6 +4,7 @@ public class Customer {
 
     private String name;
     private String size;
+    private Clothing[] items;
 
     public String getName() {
         return name;
@@ -35,6 +36,12 @@ public class Customer {
             default:
                 setSize("x");
         }
+    }
+
+    public void addItems(Clothing[] items) {}
+
+    public Clothing[] getItems() {
+        return items;
     }
 
 }
