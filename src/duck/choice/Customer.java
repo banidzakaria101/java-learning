@@ -44,4 +44,7 @@ public class Customer {
         return items;
     }
 
+    public double getClothingCost() {
+    }
+
 }
