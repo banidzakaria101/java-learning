@@ -27,13 +27,13 @@ public class Main {
         item4.setPrice(10.5);
         item4.setSize("S");
 
-        Customer c1 = new Customer();
-        c1.setName("pink");
+        Customer c1 = new Customer("pink");
+//        c1.setName("pink");
         System.out.println(c1.getName());
         String string = "HELLO WORLD";
         System.out.println(string.indexOf("O"));
-        Customer c2 = new Customer();
-        c2.setName("pinky");
+        Customer c2 = new Customer("pinky");
+//        c2.setName("pinky");
         c2.setSize(3);
 
         System.out.println("the size of the customer is: " + c2.getSize());
