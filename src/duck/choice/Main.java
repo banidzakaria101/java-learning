@@ -43,9 +43,8 @@ public class Main {
         Clothing[] items = {item1, item2, item3, item4};
         c1.addItems(items);
         for (Clothing item : items) {
-            System.out.println(item);
-        }
-        System.out.println(total);
+            System.out.println("The customer is " + c1.getName() + "and the total price is " + item.getPrice());
+            System.out.println(total);
 
 //        System.out.println("the price of " + item1.description + "is " + item1.price + "and the size is " + item1.size);
 //        System.out.println("the price of " + item2.description + "is " + item2.price + "and the size is " + item2.size);
@@ -54,7 +53,7 @@ public class Main {
 
 //        System.out.println(total);
 
-        //practice switch statement:
+            //practice switch statement:
 
 
 //        switch (measurement) {
@@ -88,5 +87,6 @@ public class Main {
 //        System.out.println(total);
 
 
+        }
     }
 }
