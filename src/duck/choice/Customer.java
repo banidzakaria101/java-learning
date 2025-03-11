@@ -4,12 +4,11 @@ public class Customer {
 
     private String name;
     private String size;
-    private int measurement;
     private Clothing[] items;
 
     public Customer(String name, int measurement) {
         this.name = name;
-        this.measurement = measurement;
+        setSize(measurement);
     }
 
     public String getName() {

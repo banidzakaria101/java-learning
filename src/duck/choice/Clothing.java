@@ -8,6 +8,11 @@ public class Clothing {
     private final double minimumPrice = 10.0;
     private final double tax = 0.2;
 
+    public Clothing(String description, double price, String size) {
+        this.description = description;
+        this.price = price;
+        this.size = size;
+    }
 
     public double getPrice() {
         return price + (price * tax);

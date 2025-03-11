@@ -9,34 +9,34 @@ public class Main {
         double total = 0.0;
         int measurement = 6;
 
-        Clothing item1 = new Clothing();
-        Clothing item2 = new Clothing();
-        Clothing item3 = new Clothing();
-        Clothing item4 = new Clothing();
+        Clothing item1 = new Clothing("Blue Jacket",20.9,"M");
+        Clothing item2 = new Clothing("Orange T-shirt",10.5,"S");
+        Clothing item3 = new Clothing("Green Scarf",5.0,"S");
+        Clothing item4 = new Clothing("Blue T-shirt",10.5,"S");
 
-        item1.setDescription("Blue Jacket");
-        item1.setPrice(20.9);
-        item1.setSize("M");
-        item2.setDescription("Orange T-shirt");
-        item2.setPrice(10.5);
-        item2.setSize("S");
-        item3.setDescription("Green Scarf");
-        item3.setPrice(5.0);
-        item3.setSize("S");
+//        item1.setDescription("Blue Jacket");
+//        item1.setPrice(20.9);
+//        item1.setSize("M");
+//        item2.setDescription("Orange T-shirt");
+//        item2.setPrice(10.5);
+//        item2.setSize("S");
+//        item3.setDescription("Green Scarf");
+//        item3.setPrice(5.0);
+//        item3.setSize("S");
         item4.setDescription("Blue T-shirt");
         item4.setPrice(10.5);
         item4.setSize("S");
 
-        Customer c1 = new Customer("pink");
+        Customer c1 = new Customer("pink",3);
 //        c1.setName("pink");
         System.out.println(c1.getName());
-        String string = "HELLO WORLD";
-        System.out.println(string.indexOf("O"));
-        Customer c2 = new Customer("pinky");
+//        String string = "HELLO WORLD";
+//        System.out.println(string.indexOf("O"));
+//        Customer c2 = new Customer("pinky");
 //        c2.setName("pinky");
-        c2.setSize(3);
-
-        System.out.println("the size of the customer is: " + c2.getSize());
+//        c2.setSize(3);
+//
+//        System.out.println("the size of the customer is: " + c2.getSize());
 
 
         //practice switch statement:
