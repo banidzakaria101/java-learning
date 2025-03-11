@@ -38,7 +38,8 @@ public class Customer {
         }
     }
 
-    public void addItems(Clothing[] items) {
+    public void addItems(Clothing[] someItems) {
+        items = someItems;
     }
 
     public Clothing[] getItems() {
@@ -46,7 +47,7 @@ public class Customer {
     }
 
     public double getClothingCost() {
-        double total = 0;
+        double total = 0.0;
         for (Clothing item : items) {
             total = total + item.getPrice();
         }
