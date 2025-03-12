@@ -50,8 +50,9 @@ public class Main {
         }
 
         for (Clothing item : c1.getItems()) {
-
-            sum += item.getPrice();
+            if (item.getSize().equals("L")) {
+                sum += item.getPrice();
+            }
 
         }
 
