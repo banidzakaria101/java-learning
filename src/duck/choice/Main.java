@@ -8,6 +8,7 @@ public class Main {
         double tax = 0.2;
         double total = 0.0;
         int measurement = 6;
+        System.out.println(Clothing.minimumPrice);
 
         Clothing item1 = new Clothing("Blue Jacket",20.9,"M");
         Clothing item2 = new Clothing("Orange T-shirt",10.5,"S");
@@ -23,11 +24,11 @@ public class Main {
 //        item3.setDescription("Green Scarf");
 //        item3.setPrice(5.0);
 //        item3.setSize("S");
-        item4.setDescription("Blue T-shirt");
-        item4.setPrice(10.5);
-        item4.setSize("S");
+//        item4.setDescription("Blue T-shirt");
+//        item4.setPrice(10.5);
+//        item4.setSize("S");
 
-        Customer c1 = new Customer("pink",3);
+        Customer c1 = new Customer("pink",20);
 //        c1.setName("pink");
         System.out.println(c1.getName());
 //        String string = "HELLO WORLD";
@@ -36,7 +37,7 @@ public class Main {
 //        c2.setName("pinky");
 //        c2.setSize(3);
 //
-//        System.out.println("the size of the customer is: " + c2.getSize());
+        System.out.println("the size of the customer " + c1.getName() + " is: " + c1.getSize());
 
 
         //practice switch statement:
