@@ -59,12 +59,18 @@ public class Main {
 
         }
 
-        try {
-            average = sum/counter;
-            System.out.println("The average price of the customer " + c1.getName() + " is " + average + " and count is " + counter);
-        } catch (ArithmeticException e) {
+        if ( counter > 0){
+            average = sum / counter;
+        }else {
             System.out.println("You can not divide by zero");
         }
+
+//        try {
+//            average = sum/counter;
+//            System.out.println("The average price of the customer " + c1.getName() + " is " + average + " and count is " + counter);
+//        } catch (ArithmeticException e) {
+//            System.out.println("You can not divide by zero");
+//        }
 
 //        System.out.println("the price of " + item1.description + "is " + item1.price + "and the size is " + item1.size);
 //        System.out.println("the price of " + item2.description + "is " + item2.price + "and the size is " + item2.size);
