@@ -9,6 +9,8 @@ public class Main {
         double total = 0.0;
         int measurement = 6;
         double sum = 0.0;
+        int counter = 0;
+        double average = 0.0;
         System.out.println(Clothing.minimumPrice);
 
         Clothing item1 = new Clothing("Blue Jacket",20.9,"M");
@@ -51,13 +53,19 @@ public class Main {
 
         for (Clothing item : c1.getItems()) {
             if (item.getSize().equals("L")) {
+                counter++;
                 sum += item.getPrice();
             }
 
         }
 
-        double average = sum/items.length;
-        System.out.println("The average price of the customer " + c1.getName() + " is " + average);
+        try {
+            average = sum/counter;
+            System.out.println("The average price of the customer " + c1.getName() + " is " + average + " and count is " + counter);
+        } catch (ArithmeticException e) {
+            System.out.println("You can not divide by zero");
+        }
+
 //        System.out.println("the price of " + item1.description + "is " + item1.price + "and the size is " + item1.size);
 //        System.out.println("the price of " + item2.description + "is " + item2.price + "and the size is " + item2.size);
 //
