@@ -1,6 +1,8 @@
 package duck.choice;
 
 
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -68,6 +70,14 @@ public class Main {
         }else {
             System.out.println("You can not divide by zero");
         }
+
+        //compare Clothing description
+
+        Arrays.sort(items);
+        for(Clothing item : items){
+            System.out.println(item);
+        }
+
 
 //        try {
 //            average = sum/counter;

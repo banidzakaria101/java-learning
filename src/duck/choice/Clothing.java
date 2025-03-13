@@ -1,6 +1,6 @@
 package duck.choice;
 
-public class Clothing {
+public class Clothing implements Comparable<Clothing>{
 
     private String description;
     private double price;
@@ -48,4 +48,8 @@ public class Clothing {
         return "Description: " + getDescription() + ", Price: " + getPrice() + ", Size: " + getSize();
     }
 
+    @Override
+    public int compareTo(Clothing clothing) {
+        return this.description.compareTo(clothing.description);
+    }
 }
