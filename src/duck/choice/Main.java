@@ -47,7 +47,7 @@ public class Main {
         Clothing[] items = {item1, item2, item3, item4};
 
         for(Clothing item : items){
-            System.out.println(item.soString());
+            System.out.println(item);
         }
         c1.addItems(items);
         System.out.println("The customer is " + c1.getName() + "and the total price is " + c1.getClothingCost());

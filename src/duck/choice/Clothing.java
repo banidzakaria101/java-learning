@@ -43,8 +43,9 @@ public class Clothing {
         this.size = size;
     }
 
-    public String soString() {
-        return "Description: " + description + ", Price: " + price + ", Size: " + size;
+    @Override
+    public String toString() {
+        return "Description: " + getDescription() + ", Price: " + getPrice() + ", Size: " + getSize();
     }
 
 }
