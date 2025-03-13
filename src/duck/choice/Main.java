@@ -45,6 +45,10 @@ public class Main {
 
         //practice switch statement:
         Clothing[] items = {item1, item2, item3, item4};
+
+        for(Clothing item : items){
+            System.out.println(item.soString());
+        }
         c1.addItems(items);
         System.out.println("The customer is " + c1.getName() + "and the total price is " + c1.getClothingCost());
         for (Clothing item : c1.getItems()) {

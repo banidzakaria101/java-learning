@@ -43,4 +43,8 @@ public class Clothing {
         this.size = size;
     }
 
+    public String soString() {
+        return "Description: " + description + ", Price: " + price + ", Size: " + size;
+    }
+
 }
