@@ -72,7 +72,6 @@ public class Main {
         }
 
         //compare Clothing description
-
         Arrays.sort(items);
         for(Clothing item : items){
             System.out.println(item);
@@ -96,19 +95,19 @@ public class Main {
             //practice switch statement:
 
 
-//        switch (measurement) {
-//            case 1,2,3:
-//                c2.size = "S";
-//                break;
-//            case 4,5,6:
-//                c2.size = "M";
-//                break;
-//            case 7,8,9:
-//                c2.size = "L";
-//                break;
-//            default:
-//                c2.size ="x";
-//        }
+        switch (measurement) {
+            case 1,2,3:
+                c2.size = "S";
+                break;
+            case 4,5,6:
+                c2.size = "M";
+                break;
+            case 7,8,9:
+                c2.size = "L";
+                break;
+            default:
+                c2.size ="x";
+        }
 //
 //        System.out.println("the size of the customer " + c2.name + "is " + c2.size);
 //
