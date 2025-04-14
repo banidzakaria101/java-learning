@@ -14,6 +14,7 @@ public class Main {
         int counter = 0;
         double average = 0.0;
         int maxValue = Math.max(20,99);
+        int minValue = Math.min(20,99);
         System.out.println("the max value is :" + maxValue);
         System.out.println(Clothing.minimumPrice);
 
