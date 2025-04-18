@@ -139,8 +139,10 @@ public class Main {
 
         System.out.println("please enter your name!");
         String input = newObj.nextLine();
+        System.out.println("enter your age!");
+        int age = newObj.nextInt();
 
-        System.out.println("your name is " + input);
+        System.out.println("your name is " + input + " and age is " + age);
     }
 
     
