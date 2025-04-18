@@ -2,6 +2,7 @@ package duck.choice;
 
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -17,10 +18,10 @@ public class Main {
 //        int minValue = Math.min(20,99);
 //        System.out.println("the max value is :" + maxValue);
 //        System.out.println("the min value is :" + minValue);
-        double roundUp = Math.round(99.435);
-        double roundDown = Math.round(99.565);
-        System.out.println(roundUp);
-        System.out.println(roundDown);
+//        double roundUp = Math.round(99.435);
+//        double roundDown = Math.round(99.565);
+//        System.out.println(roundUp);
+//        System.out.println(roundDown);
         System.out.println(Clothing.minimumPrice);
 
         Clothing item1 = new Clothing("Blue Jacket",20.9,"M");
@@ -132,6 +133,14 @@ public class Main {
 //            }
 //        }
 //        System.out.println(total);
+
+
+        Scanner newObj = new Scanner(System.in);
+
+        System.out.println("please enter your name!");
+        String input = newObj.nextLine();
+
+        System.out.println("your name is " + input);
     }
 
     
